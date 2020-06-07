@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace DesignPatterns.Facade
 {
@@ -8,9 +6,7 @@ namespace DesignPatterns.Facade
     {
         public static List<List<int>> Generate(int size)
         {
-            List<List<int>> matrix;
             List<List<int>> list;
-            int tries = 0;
 
             do
             {
@@ -20,11 +16,8 @@ namespace DesignPatterns.Facade
                 {
                     list.Add(Generator.Generate(size));
                 }
-
-                matrix = Splitter.Split(list);
-                tries++;
             }
-            while (!Verifier.Verify(matrix));
+            while (!Verifier.Verify(Splitter.Split(list)));
 
             return list;
         }
