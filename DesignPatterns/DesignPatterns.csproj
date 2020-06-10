@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>DesignPatterns.Memento.Startup</StartupObject>
+    <StartupObject>DesignPatterns.Chain_of_Responsability.Startup</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
