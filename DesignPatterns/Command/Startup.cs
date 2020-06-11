@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DesignPatterns.Command
 {
@@ -19,6 +17,8 @@ namespace DesignPatterns.Command
                 Action = Action.Withdraw,
                 Amount = 50
             };
+            
+            account.Process(deposit100Command);
             account.Process(withdraw50Command);
 
             Console.WriteLine($"Account balance: {account.Balance}");

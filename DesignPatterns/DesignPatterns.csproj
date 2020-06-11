@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>DesignPatterns.Command.Startup</StartupObject>
+    <StartupObject>DesignPatterns.Interpreter.Startup</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

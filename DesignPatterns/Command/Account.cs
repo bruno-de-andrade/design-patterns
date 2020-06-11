@@ -11,10 +11,10 @@ namespace DesignPatterns.Command
             switch (command.Action)
             {
                 case Action.Deposit:
-                    command.Success = Withdraw(command.Amount);
+                    command.Success = Deposit(command.Amount);
                     break;
                 case Action.Withdraw:
-                    command.Success = Deposit(command.Amount);
+                    command.Success = Withdraw(command.Amount);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
