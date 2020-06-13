@@ -3,8 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>DesignPatterns.Interpreter.Startup</StartupObject>
+    <StartupObject>DesignPatterns.Iterator.Startup</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Iterator\original.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="5.2.0" />
@@ -14,6 +18,10 @@
     <None Update="Singleton\capitals.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Iterator\original.cs" />
   </ItemGroup>
 
 </Project>
