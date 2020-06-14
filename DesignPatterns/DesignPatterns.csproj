@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>DesignPatterns.Iterator.Startup</StartupObject>
+    <StartupObject>DesignPatterns.Mediator.Startup</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,10 +18,6 @@
     <None Update="Singleton\capitals.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Iterator\original.cs" />
   </ItemGroup>
 
 </Project>
